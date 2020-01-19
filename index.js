@@ -89,7 +89,6 @@ function processLastItem(stringList,callback) {
 */
 function processSum(numberList,callback) {
 	return callback(numberList.reduce((sum,num)=>sum +num,0))
-  /* CODE HERE */
 }
 
 /**
@@ -110,8 +109,8 @@ function processSum(numberList,callback) {
  * [2] Invoking `processProduct` passing 25 and 0 and `(num) => num + 1000`,
  * should return 1000.
 */
-function processProduct(/* CODE HERE */) {
-  /* CODE HERE */
+function processProduct(num1,num2,callback) {
+	return callback(num1*num2);
 }
 
 /**
@@ -134,8 +133,8 @@ function processProduct(/* CODE HERE */) {
  * "lady gaga" and `['foo', 'bar']` and `(bool) => bool ? 'nice!' : 'sad'`,
  * should return "sad".
 */
-function processContains(/* CODE HERE */) {
-  /* CODE HERE */
+function processContains(item,list,callback) {
+	return callback(list.includes(item));
 }
 
 /**
