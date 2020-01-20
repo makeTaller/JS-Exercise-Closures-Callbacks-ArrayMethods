@@ -200,9 +200,10 @@ function getFullNames(runners) {
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
 function firstNamesAllCaps(runners) {
-	fullRunners = [];
-	fullNames = runners.forEach((runner)=> fullRunners.push(runner.first_name.toUpperCase()))
-	return fullRunners;
+	// fullRunners = [];
+	// fullNames = runners.forEach((runner)=> fullRunners.push(runner.first_name.toUpperCase()))
+	uNames = runners.map((runner) => runner.first_name.toUpperCase())
+	return uNames;
 }
 
 /**
@@ -218,8 +219,9 @@ function firstNamesAllCaps(runners) {
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
-function getRunnersByTShirtSize(/* CODE HERE */) {
-  /* CODE HERE */
+function getRunnersByTShirtSize(runners,tShirtSize) {
+	shirtItem = runners.filter((shirt)=> shirt.shirt_size === tShirtSize)
+	return shirtItem;
 }
 
 /**
